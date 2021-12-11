@@ -1,4 +1,4 @@
-
+ArrayList <Asteroid> boulders= new ArrayList <Asteroid>();
 Spaceship bro = new Spaceship();
 Star [] bud = new Star[100];
 public void setup() 
@@ -30,5 +30,10 @@ public void draw()
     if(key == 'd'){
       bro.turn(10);
     }
+  }
+  for(int i = 0; i < 20; i++){
+boulders.add(new Asteroid());
+boulders.get(i).show();
+boulders.get(i).move();
   }
 }
